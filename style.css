@@ -149,15 +149,6 @@ body {
   animation: fade 0.8s;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .admin-panel-wrapper {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -181,7 +172,8 @@ body {
 
 .header h2 {
   font-size: 30px;
-  text-align: center;
+  font-weight: 400;
+  text-align: left;
   width: 50%;
   float: left;
   padding: 20px;
@@ -215,3 +207,44 @@ body {
   color: var(--grey-lg);
 }
 
+.admin-option-wrapper {
+  position: relative;
+  width: 70%;
+}
+
+.forms-wrapper input[type='text'] {
+  display: block;
+  width: 300px;
+  font-family: inherit;
+  font-size: 17px;
+  padding: var(--size-md) var(--size-xs);
+  margin: var(--size-md) 0 var(--size-sd) 80px;
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: var(--b-radius);
+  outline: none;
+  transition: var(--transition);
+  cursor: pointer;
+  animation: fade 0.8s;
+}
+
+.form-wrapper input[type='text']::placeholder {
+  color: var(--grey-lg);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.forms-wrapper input[type='radio'] {
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  color:blue;
+}
