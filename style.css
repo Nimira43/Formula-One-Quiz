@@ -98,6 +98,7 @@ body {
   border-radius: var(--b-radius);
   outline: none;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .landing-inputs-wrapper input::placeholder {
@@ -119,6 +120,7 @@ body {
   border: var(--size-1) solid var(--secondary-dk);
   border-radius: var(--b-radius);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .start-quiz-btn:active {
@@ -171,5 +173,45 @@ body {
   border-radius: var(--b-radius);
   overflow: auto;
   border: var(--size-1) solid var(--secondary-dk);
+}
+
+.header {
+  overflow: hidden;
+}
+
+.header h2 {
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  padding: 20px;
+  color: var(--light);
+}
+
+.forms-wrapper  {
+  width: 80%;
+  margin: 1% auto;
+}
+
+.new-question-text {
+  display: block;
+  width: 50%;
+  height: 60px;
+  max-width: 500px;
+  min-width: 300px;
+  color: var(--light);
+  background: var(--primary);
+  font-size: 18px;
+  padding: 7px;
+  margin: var(--size-md) 0 var(--size-md) 80px;
+  border: none;
+  border-radius: var(--b-radius);
+  outline: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.new-question-text::placeholder {
+  color: var(--grey-lg);
 }
 
