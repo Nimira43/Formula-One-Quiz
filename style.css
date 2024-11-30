@@ -35,3 +35,18 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
+.landing-page-wrapper {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5)),
+    url('./images/landing-bg.jpg') no-repeat center;
+  background-size: cover;
+  border-radius: var(--b-radius);
+  border: var(--size-xs) solid var(--secondary-dk);
+  height: 90vh;
+  width: 94%;
+  margin: 5vh 2.5%;
+  position: relative;
+}
