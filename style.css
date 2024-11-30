@@ -257,10 +257,46 @@ button:hover { color: var(--dark);
   border-color: var(--light); 
   background: var(--light); 
 } 
+.results-list-wrapper p, 
+.inserted-questions-wrapper p { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  color: var(--light); 
+  background: var(--grey-dk); 
+  padding: var(--size-md) var(--size-lg); 
+  margin: var(--size-md) 0; 
+  border-radius: var(--b-radius); 
+  border: var(--size-1) solid var(--grey-md); transition: var(--transition); 
+} 
+
+.results-list-wrapper p:hover, 
+.inserted-questions-wrapper p:hover { 
+  border-color: var(--light); 
+  background: var(--grey-lg); 
+} 
+
+.results-list-wrapper p button, 
+.inserted-questions-wrapper p button { 
+  font-family: inherit; 
+  color: var(--light); 
+  background: var(--grey-dk); 
+  border: var(--size-1) solid var(--secondary-dk);
+  border-radius: var(--b-radius); 
+  transition: var(--transition); 
+  cursor: pointer; 
+} 
+
+.results-list-wrapper p button:hover, 
+.inserted-questions-wrapper p button:hover {
+   border-color: var(--light); 
+   background: var(--grey-lg); 
 
 .clear { 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
 } 
+
+
 
