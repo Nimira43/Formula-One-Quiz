@@ -230,3 +230,30 @@ body {
 .forms-wrapper input[type='text']::placeholder { 
   color: var(--grey-lg); 
 } 
+
+button { 
+  display: block; 
+  width: 100%; 
+  color: var(--light); 
+  background: transparent; 
+  font-family: inherit; 
+  font-size: 17px; 
+  letter-spacing: 1.5px; 
+  text-transform: uppercase; 
+  font-weight: 500; 
+  padding: var(--size-lg) var(--size-md); 
+  margin: var(--size-md) auto; 
+  border: var(--size-1) solid var(--secondary-dk);
+  border-radius: var(--b-radius); 
+  transition: var(--transition); 
+  cursor: pointer; 
+} 
+
+button:active { 
+  transform: scale(0.98); 
+} 
+
+button:hover { color: var(--dark); 
+  border-color: var(--light); 
+  background: var(--light); 
+} 
