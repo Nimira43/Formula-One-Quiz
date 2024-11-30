@@ -41,6 +41,9 @@ body {
 }
 
 .landing-page-wrapper {
+  position: relative;
+  height: 90vh;
+  width: 95%;
   background: linear-gradient(
     to bottom right,
     rgba(0, 0, 0, 0.7),
@@ -49,10 +52,7 @@ body {
   background-size: cover;
   border-radius: var(--b-radius);
   border: var(--size-1) solid var(--secondary-dk);
-  height: 90vh;
-  width: 95%;
   margin: 5vh 2.5%;
-  position: relative;
   animation: fade 1.5s;
 }
 
@@ -84,15 +84,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .landing-inputs-wrapper input {
@@ -139,4 +130,29 @@ body {
   color: var(--dark);
   border-color: var(--light);
   background: var(--light);
+}
+
+.admin-panel-container {
+  position: relative;
+  height: 90vh;
+  width: 95%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8)),
+    url('./images/admin-bg.jpg') no-repeat center;
+  background-size: cover;
+  border-radius: var(--b-radius);
+  border: var(--size-1) solid var(--secondary-dk);
+  margin: 5vh 2.5%;
+  animation: fade 0.8s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
