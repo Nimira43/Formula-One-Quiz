@@ -12,7 +12,7 @@
   --grey-lg: #ccc;
   --grey-md: #888;
   --grey-dk: #333;
-  --primary: #ff4500;
+  --primary: #012222;
   --secondary-dk: #008080;
   --secondary-lg: #87ceeb;
   --b-radius: 3px;
@@ -180,10 +180,16 @@ body {
   margin-bottom: var(--size-lg);
 }
 
-.header h2 {
+.header h2,
+.results-list-container h2 { 
   font-size: 30px;
   font-weight: 400;
   color: var(--light);
+  text-align: center;
+  margin-right: var(--size-lg);
+  margin-left: 0;
+  margin-bottom: var(--grey-md); 
+
 }
 
 .forms-wrapper  {
@@ -278,30 +284,29 @@ button:hover { color: var(--dark);
   align-items: center; 
 }
 
+.results-list-wrapper, 
+.inserted-questions-wrapper { 
+  padding-right: var(--size-md); 
+}
+
 .results-list-wrapper p, 
 .inserted-questions-wrapper p { 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
   color: var(--light); 
-  background: var(--grey-dk); 
+  background: rgba(0, 0, 0, 0.7); 
   padding: var(--size-md) var(--size-lg); 
   margin: var(--size-md) 0; 
   border-radius: var(--b-radius); 
-  border: var(--size-1) solid var(--grey-md); transition: var(--transition); 
-} 
-
-.results-list-wrapper p:hover, 
-.inserted-questions-wrapper p:hover { 
-  border-color: var(--light); 
-  background: var(--grey-lg); 
+  border: var(--size-1) solid var(--secondary-dk); transition: var(--transition); 
 } 
 
 .results-list-wrapper p button, 
 .inserted-questions-wrapper p button { 
   font-family: inherit; 
   color: var(--light); 
-  background: var(--grey-dk); 
+  background: transparent; 
   border: var(--size-1) solid var(--secondary-dk);
   border-radius: var(--b-radius); 
   transition: var(--transition); 
@@ -311,7 +316,12 @@ button:hover { color: var(--dark);
 .results-list-wrapper p button:hover, 
 .inserted-questions-wrapper p button:hover {
    border-color: var(--light); 
-   background: var(--grey-lg); 
+   background: var(--light); 
+   color: var(--dark)
+}
+
+.results-clear-btn {
+  width: 400px;
 }
 
 @keyframes fade { 
