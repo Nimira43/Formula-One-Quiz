@@ -187,8 +187,9 @@ body {
 }
 
 .forms-wrapper  {
-  width: 80%;
-  margin: 1% auto;
+  display: grid;
+  gap: var(--size-md);
+  margin-bottom: var(--size-lg);
 }
 
 .new-question-text {
