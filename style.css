@@ -137,6 +137,6 @@ body {
 
 .start-quiz-btn:hover {
   color: var(--dark);
-  border-color: var(--primary);
-  background: var(--primary);
+  border-color: var(--light);
+  background: var(--light);
 }
