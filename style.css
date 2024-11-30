@@ -174,16 +174,15 @@ body {
 }
 
 .header {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--size-lg);
 }
 
 .header h2 {
   font-size: 30px;
   font-weight: 400;
-  text-align: left;
-  width: 50%;
-  float: left;
-  padding: 20px;
   color: var(--light);
 }
 
