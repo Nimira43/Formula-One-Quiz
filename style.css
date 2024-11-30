@@ -16,13 +16,16 @@
   --secondary-dk: #008080;
   --secondary-lg: #87ceeb;
   --b-radius: 3px;
-  --size-xs: 1px;
+  --size-1: 1px;
+  --size-2: 2px;
+  --size-3: 3px;
   --size-sm: 5px;
   --size-md: 10px;
   --size-lg: 15px;
   --size-xl: 20px;
   --font-main: 'League Spartan', sans-serif;
   --font-logo: 'Amatic SC', sans-serif;
+  --transition: all 0.3s ease;
 }
 
 body {
@@ -45,7 +48,7 @@ body {
     url('./images/landing-bg.jpg') no-repeat center;
   background-size: cover;
   border-radius: var(--b-radius);
-  border: var(--size-xs) solid var(--secondary-dk);
+  border: var(--size-1) solid var(--secondary-dk);
   height: 90vh;
   width: 95%;
   margin: 5vh 2.5%;
@@ -58,24 +61,28 @@ body {
   font-size: 55px;
   font-weight: 400;
   color: var(--light);
-  text-shadow: 3px 3px 2px var(--dark);
-  letter-spacing: 3px;
+  text-shadow: var(--size-3) var(--size-3) var(--size-2) var(--dark);
+  letter-spacing: var(--b-radius);
   margin-top: 60px;
 }
 
 .landing-inputs-wrapper {
   position: absolute;
-  background: red;
+  background: rgba(0, 0, 0, 0.7);
   color: var(--primary);
   width: 400px;
   height: 200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: var(--b-radius);
-  margin-top: 100px; 
-  /* clip-path: polygon(100% 34%, 100% 35%, 100% 100%, 0 100%, 0 7%);   */
+  margin-top: 100px;
+  padding:  var(--size-xl);
+  border-radius: var(--b-radius); 
   animation: fade 1.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fade {
@@ -85,4 +92,18 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.landing-inputs-wrapper input {
+  display: block;
+  width: 300px;
+  font-size: 17px;
+  padding: var(--size-lg) var(--size-md);
+  margin: var(--size-xl) auto;
+  background: var(--primary);
+  color: var(--light);
+  border: var(--size-1) solid var(--primary);
+  border-radius: var(--b-radius);
+  outline: none;
+  transition: var(--transition);
 }
