@@ -147,6 +147,10 @@ body {
   border: var(--size-1) solid var(--secondary-dk);
   margin: 5vh 2.5%;
   animation: fade 0.8s;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: var(--size-md);
 }
 
 .admin-panel-wrapper {
