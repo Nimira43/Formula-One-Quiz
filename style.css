@@ -1,3 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
 
 * {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light: #fffaf0;
+  --dark: #111;
+  --grey-xl: #eee;
+  --grey-lg: #ccc;
+  --grey-md: #888;
+  --grey-dk: #333;
+  --primary: #ff4500;
+  --secondary-dk: #008080;
+  --secondary-lg: #87ceeb;
+  --b-radius: 3px;
+  --size-xs: 1px;
+  --size-sm: 5px;
+  --size-md: 10px;
+  --size-lg: 15px;
+  --size-xl: 20px;
+}
+
+body {
+}
