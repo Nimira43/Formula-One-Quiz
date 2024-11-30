@@ -63,6 +63,21 @@ body {
   margin-top: 60px;
 }
 
+.landing-inputs-wrapper {
+  position: absolute;
+  background: red;
+  color: var(--primary);
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--b-radius);
+  margin-top: 100px; 
+  /* clip-path: polygon(100% 34%, 100% 35%, 100% 100%, 0 100%, 0 7%);   */
+  animation: fade 1.5s;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
