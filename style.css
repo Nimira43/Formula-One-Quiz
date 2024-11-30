@@ -257,3 +257,10 @@ button:hover { color: var(--dark);
   border-color: var(--light); 
   background: var(--light); 
 } 
+
+.clear { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+} 
+
