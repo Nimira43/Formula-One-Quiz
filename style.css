@@ -213,7 +213,7 @@ body {
 .new-question-text, 
 .forms-wrapper input[type='text'] { 
   display: block; 
-  width: 100%; 
+  width: calc(100% - 30px); 
   font-family: inherit; 
   font-size: 17px; 
   padding: var(--size-lg) var(--size-md); 
