@@ -153,21 +153,24 @@ body {
   gap: var(--size-md);
 }
 
-.admin-panel-wrapper {
-  position: absolute;
+.admin-panel-wrapper,
+.results-list-container {
   background: rgba(0, 0, 0, 0.7);
-  width: 60%;
-  height: 65%;
-
-  top: 40px;
-  left: 40px;
-  /* top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%); */
-  
   border-radius: var(--b-radius);
-  overflow: auto;
   border: var(--size-1) solid var(--secondary-dk);
+  padding: var(--size-xl);
+  overflow: auto;
+}
+
+.admin-panel-wrapper::-webkit-scrollbar,
+.results-list-container::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.2);
+  width: var(--size-md);
+}
+
+.admin-panel-wrapper::-webkit-scrollbar-thumb,
+.results-list-container::-webkit-scrollbar-thumb {
+  background: var(--grey-dk);
 }
 
 .header {
