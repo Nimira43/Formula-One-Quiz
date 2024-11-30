@@ -136,7 +136,7 @@ body {
 .admin-panel-container {
   position: relative;
   height: 90vh;
-  width: 95%;
+  width: calc(100% - 40px);
   background: linear-gradient(
     to bottom right,
     rgba(0, 0, 0, 0.7),
@@ -145,11 +145,12 @@ body {
   background-size: cover;
   border-radius: var(--b-radius);
   border: var(--size-1) solid var(--secondary-dk);
-  margin: 5vh 2.5%;
+  margin: 5vh auto;
+  padding: var(--size-lg);
   animation: fade 0.8s;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr 1fr;
   gap: var(--size-md);
 }
 
@@ -321,7 +322,7 @@ button:hover { color: var(--dark);
 }
 
 .results-clear-btn {
-  width: 400px;
+  width: 570px;
 }
 
 @keyframes fade { 
