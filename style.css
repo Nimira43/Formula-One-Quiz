@@ -192,31 +192,14 @@ body {
   margin-bottom: var(--size-lg);
 }
 
-.new-question-text {
-  display: block;
-  width: 50%;
-  height: 60px;
-  max-width: 500px;
-  min-width: 300px;
-  color: var(--light);
-  background: var(--primary);
-  font-size: 18px;
-  padding: 7px;
-  margin: var(--size-md) 0 var(--size-md) 80px;
-  border: none;
-  border-radius: var(--b-radius);
-  outline: none;
-  transition: var(--transition);
-  cursor: pointer;
-}
-
-.new-question-text::placeholder {
-  color: var(--grey-lg);
+.admin-options-container {
+  display: grid;
+  gap: var(--size-md);
 }
 
 .admin-option-wrapper {
-  position: relative;
-  width: 70%;
+  display: flex;
+  align-items: center;
 }
 
 .forms-wrapper input[type='text'] {
@@ -255,7 +238,27 @@ body {
   top: 15px;
   color:blue;
 }
+.new-question-text {
+  display: block;
+  width: 50%;
+  height: 60px;
+  max-width: 500px;
+  min-width: 300px;
+  color: var(--light);
+  background: var(--primary);
+  font-size: 18px;
+  padding: 7px;
+  margin: var(--size-md) 0 var(--size-md) 80px;
+  border: none;
+  border-radius: var(--b-radius);
+  outline: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
 
+.new-question-text::placeholder {
+  color: var(--grey-lg);
+}
 .question-insert-btn {
   width: 120px;
   color: var(--light);
