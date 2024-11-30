@@ -209,3 +209,24 @@ body {
 .admin-option-wrapper input[type='text'] { 
  width: 100%; 
 } 
+
+.new-question-text, 
+.forms-wrapper input[type='text'] { 
+  display: block; 
+  width: 100%; 
+  font-family: inherit; 
+  font-size: 17px; 
+  padding: var(--size-lg) var(--size-md); 
+  margin: var(--size-md) auto; 
+  background: var(--primary); 
+  color: var(--light); 
+  border: none; 
+  border-radius: var(--b-radius); 
+  outline: none; 
+  transition: var(--transition); 
+} 
+
+.new-question-text::placeholder, 
+.forms-wrapper input[type='text']::placeholder { 
+  color: var(--grey-lg); 
+} 
