@@ -77,6 +77,7 @@ body {
   transform: translate(-50%, -50%);
   margin-top: 100px;
   padding:  var(--size-xl);
+  border: var(--size-1) solid var(--secondary-dk);
   border-radius: var(--b-radius); 
   animation: fade 1.5s;
   display: flex;
@@ -97,13 +98,45 @@ body {
 .landing-inputs-wrapper input {
   display: block;
   width: 300px;
+  font-family: inherit;
   font-size: 17px;
   padding: var(--size-lg) var(--size-md);
-  margin: var(--size-xl) auto;
+  margin: var(--size-md) auto;
   background: var(--primary);
   color: var(--light);
-  border: var(--size-1) solid var(--primary);
+  border: none;
   border-radius: var(--b-radius);
   outline: none;
   transition: var(--transition);
+}
+
+.landing-inputs-wrapper input::placeholder {
+  color: var(--grey-lg);
+}
+
+.start-quiz-btn {
+  display: block;
+  width: 300px;
+  color: var(--light);
+  background: transparent;
+  font-family: inherit;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: var(--size-lg) var(--size-md);
+  margin: var(--size-md) auto;
+  border: var(--size-1) solid var(--secondary-dk);
+  border-radius: var(--b-radius);
+  transition: var(--transition);
+}
+
+.start-quiz-btn:active {
+  transform: scale(0.98);
+}
+
+.start-quiz-btn:hover {
+  color: var(--dark);
+  border-color: var(--primary);
+  background: var(--primary);
 }
