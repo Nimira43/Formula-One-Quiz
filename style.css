@@ -197,18 +197,31 @@ body {
   gap: var(--size-md);
 }
 
-.admin-option-wrapper {
-  display: flex;
-  align-items: center;
+.admin-option-wrapper { 
+  display: grid; 
+  grid-template-columns: auto 1fr; 
+  align-items: center; 
+  gap: var(--size-md); 
+  margin-bottom: var(--size-md); 
+} 
+
+.admin-option-wrapper input[type="radio"] { 
+  margin: 0; 
+} 
+
+.admin-option-wrapper input[type="text"] { 
+  width: calc(100% - var(--size-md) - 20px); 
+  font-family: inherit; 
+  font-size: 17px; 
+  padding: var(--size-lg) 
+  var(--size-md); 
+  background: var(--primary); 
+  color: var(--light); 
+  border: none; 
+  border-radius: var(--b-radius); 
+  outline: none; 
+  transition: var(--transition); 
 }
-
-.admin-option-wrapper input[type='radio'] {
-  margin-right: var(--size-md); 
-} 
-
-.admin-option-wrapper input[type='text'] { 
- width: 100%; 
-} 
 
 .new-question-text, 
 .forms-wrapper input[type='text'] { 
@@ -226,6 +239,7 @@ body {
   transition: var(--transition); 
 } 
 
+.admin-option-wrapper input[type="text"]::placeholder,
 .new-question-text::placeholder, 
 .forms-wrapper input[type='text']::placeholder { 
   color: var(--grey-lg); 
