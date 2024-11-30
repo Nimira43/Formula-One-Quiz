@@ -257,6 +257,13 @@ button:hover { color: var(--dark);
   border-color: var(--light); 
   background: var(--light); 
 } 
+
+.clear { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
 .results-list-wrapper p, 
 .inserted-questions-wrapper p { 
   display: flex; 
@@ -291,12 +298,14 @@ button:hover { color: var(--dark);
 .inserted-questions-wrapper p button:hover {
    border-color: var(--light); 
    background: var(--grey-lg); 
+}
 
-.clear { 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-} 
-
-
-
+@keyframes fade { 
+  0% { 
+    opacity: 0; 
+  } 
+  100% 
+  { 
+    opacity: 1;
+  }
+}
